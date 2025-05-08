@@ -5,13 +5,14 @@ const pressX = document.getElementById("press-x");
 introVideo.onended = () => {
   introVideo.style.display = "none";
   loopVideo.style.display = "block";
+  loopVideo.muted = false;
   loopVideo.play();
   pressX.style.display = "block";
 };
 
 document.addEventListener("keydown", function (e) {
   if (e.key.toLowerCase() === "x" && pressX.style.display === "block") {
-    window.location.href = "menu.html"; // 👈 sends the user to your main menu page
+    window.location.href = "menu.html";
   }
 });
 
