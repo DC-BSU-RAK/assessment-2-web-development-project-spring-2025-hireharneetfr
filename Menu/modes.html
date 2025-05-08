@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Black Ops 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="modes.css" />
+</head>
+<body>
+
+  <video class="video-bg" autoplay loop muted>
+    <source src="etc/zombiemap.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
+    <h1 class="page-heading">Modes in Call of Duty: Black Ops III</h1>
+    
+    <section class="card-grid">
+        <!-- MULTIPLAYER CARD -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: url('etc/multiplayer.webp');">
+              <h2>Multiplayer</h2>
+            </div>
+            <div class="flip-card-back">
+              <h2>Multiplayer</h2>
+              <p>
+                Fast-paced, vertical combat with futuristic movement like wall-running and power slides. Choose from unique Specialists with insane abilities. Played across iconic maps like Combine and Hunted during the 2015 beta.(Activision, 2015)
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- CAMPAIGN CARD -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: url('etc/campaign.webp');">
+              <h2>Campaign</h2>
+            </div>
+            <div class="flip-card-back">
+              <h2>Campaign</h2>
+              <p>
+                Set in a tech-heavy 2065, you're a cyber-enhanced soldier diving into a mind-bending plot involving AI and rogue ops. Supports 4-player co-op and lets you hack, blast, and customize across open missions.
+                (Polygon, 2015)                
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- ZOMBIES CARD -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="background-image: url('etc/zombies.webp');">
+              <h2>Zombies</h2>
+            </div>
+            <div class="flip-card-back">
+              <h2>Zombies</h2>
+              <p>
+                Zombies goes full horror-noir in Shadows of Evil, with twisted characters, Lovecraftian monsters, and deep lore. Beast Mode, GobbleGum, and epic maps like The Giant and Revelations make this mode legendary.(Treyarch, 2015)
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <p class="return-text">Press <span class="x-key">X</span> to return to menu</p>
+    
+    <script>
+      document.addEventListener("keydown", function (e) {
+        if (e.key.toLowerCase() === "x") {
+          window.location.href = "../MainMenu/menu.html";
+        }
+      });
+    </script>
+    
+  </div>
+</body>
+</html>
