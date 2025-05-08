@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('CharactersImages/bg.webp') no-repeat center center fixed;
+    background-size: 130%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .main-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .cod-title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: orange;
+    text-shadow: 0 0 10px lightsalmon;
+    margin-bottom: 30px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 100px;
+    gap: 15px;
+  }
+  
+  .char-box {
+    border: 2px solid orange;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px orange;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .char-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .char-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info-panel {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 3px solid orange;
+    text-align: left;
+  }
+  
+  .info-panel h2 {
+    color: orange;
+    margin-top: 0;
+  }
+  
+  .info-panel p {
+    line-height: 1.5;
+  }
+#abc {
+    text-align:center;
+}
+  .x-key {
+    color: orange;
+}
