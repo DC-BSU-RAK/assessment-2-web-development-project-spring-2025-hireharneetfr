@@ -1,0 +1,78 @@
+body {
+    background-color: #1b2838;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px;
+  }
+  
+.main-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .header-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 50px 0 0px 308px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+  .content-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .review-box {
+    background-color: #18232d;
+    padding: 20px;
+    width: 350px;
+    border-radius: 4px;
+  }
+  
+  .info-panel {
+    background-color: #0f1c27;
+    padding: 20px;
+    width: 400px;
+    text-align: left;
+    border-radius: 4px;
+  }
+  
+  .side-art {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .tags span {
+    background-color: #233c4f;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+
+  }
+  
+  .review-buttons {
+    margin-top: 0px;
+  }
+  
+  .review-buttons button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #444;
+    cursor: pointer;
+  }
+  
+  
