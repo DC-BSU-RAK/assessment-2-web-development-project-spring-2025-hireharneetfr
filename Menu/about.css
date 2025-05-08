@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+
+    overflow: hidden;
+  }
+  
+  .video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .here-button {
+    color: orange;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .here-button:hover {
+    text-decoration: underline;
+  }
+  
+  .overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    max-width: 700px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px lightblue;
+  }
+  
+  .overlay-box h1 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .go-back {
+    margin-top: 30px;
+    color: #ccc;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .x-key {
+    color: orange;
+  }
+  
+  

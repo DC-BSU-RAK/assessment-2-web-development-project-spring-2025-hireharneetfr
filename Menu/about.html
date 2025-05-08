@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Black Ops 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+  <video class="video-bg" autoplay loop muted>
+    <source src="etc/zombiemap.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay-box">
+    <h1>ABOUT</h1>
+    <p class="info-text">
+        Call of Duty: Black Ops III throws players into a dark future shaped by advanced robotics and cybernetics, where the line between humanity and technology is dangerously thin. Developed by Treyarch, it's the twelfth entry in the franchise and the fourth in the Black Ops series.
+        First released on November 6, 2015, BO3 was the first CoD with DLC and Beta access launching first on PlayStation. It also marked the series’ debut with official Chinese translation and a later release on macOS.
+        The game features three epic modes: Campaign, Multiplayer, and Zombies — offering one of the deepest Call of Duty experiences ever. Click  <a href="modes.html" class="here-button">here</a> to learn more about the modes.
+        
+    </p>
+    <p class="go-back">Press <span class="x-key">X</span> to return to the main menu</p>
+  </div>
+
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if (e.key.toLowerCase() === "x") {
+        window.location.href = "menu.html";
+      }
+    });
+  </script>
+
+</body>
+</html>
