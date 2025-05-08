@@ -44,17 +44,10 @@
     border-radius: 8px;
     display: block;
   }
-  
-  .here-button {
+.o-key {
     color: orange;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .here-button:hover {
-    text-decoration: underline;
-  }
-  
+}
+
 .x-key {
     color: orange;
 }
