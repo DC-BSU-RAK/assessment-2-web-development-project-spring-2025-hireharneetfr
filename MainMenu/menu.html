@@ -21,26 +21,50 @@
       
       <h1 class="logo">BLACK OPS <span class="three">III</span></h1>
       <ul class="menu">
-      
         <li><a href="../Menu/about.html">ABOUT</a></li>
         <li><a href="#">CHARACTERS</a></li>
         <li><a href="#">GAMEPLAY</a></li>
         <li><a href="#">REVIEW & RATING</a></li>
         <li><a href="#">MODDING COMMUNITY</a></li>
       </ul>
-      
+
       <div class="status">
         <p>You are Party Leader</p>
         <p>Party Privacy: Closed</p>
-
-        <div id="audio-message" class="audio-message">
-          No audio due to browser autoplay policy
-        </div>
-        </div>
       </div>
+
+      <div class="soundtrack-menu">
+        <span class="label">Game Soundtracks: </span>
+        <ul class="track-list">
+          <li><button data-src="etc/Soundtracks/track1.mp3">Track 1</button></li>
+          <li><button data-src="etc/Soundtracks/track2.mp3">Track 2</button></li>
+          <li><button data-src="etc/Soundtracks/track3.mp3">Track 3</button></li>
+          <li><button data-src="etc/Soundtracks/track4.mp3">Track 4</button></li>
+        </ul>
+      </div>
+
+      <audio id="bg-music" loop></audio>
+      <div id="audio-message" class="audio-message">No audio due to browser autoplay policy</div>
     </div>
   </div>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const trackButtons = document.querySelectorAll(".track-list button");
+    const message = document.getElementById("audio-message");
+
+    trackButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const newSrc = button.getAttribute("data-src");
+        music.src = newSrc;
+        music.play();
+      });
+    });
+
+    music.addEventListener("play", () => {
+      message.style.display = "none";
+    });
+  </script>
 </body>
 </html>
-
 
