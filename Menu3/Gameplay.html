@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Walkthrough</title>
+  <link rel="stylesheet" href="gameplay.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Game Walkthrough of Call of Duty: Black Ops III</h1>
+
+  <div class="video-container">
+    <video controls>
+      <source src="etc/walkthrough.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <br>
+  <p> To watch the whole video click <a href="https://www.youtube.com/watch?v=7W4ApCp9AzY" class="here-button">here</a> </p>
+  <p class="return-text">Press <span class="x-key">X</span> to return to menu</p>
+    
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if (e.key.toLowerCase() === "x") {
+        window.location.href = "../MainMenu/menu.html";
+      }
+    });
+  </script>
+
+</body>
+</html>
