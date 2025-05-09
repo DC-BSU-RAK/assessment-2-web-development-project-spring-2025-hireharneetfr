@@ -29,7 +29,6 @@ introVideo.addEventListener("ended", function() {
 
 document.addEventListener("keydown", function (e) {
   if (e.key.toLowerCase() === "x" && pressX.style.display === "block") {
-    // Optional: loopVideo.pause(); // stop bg audio if you want
     window.location.href = "menu.html";
   }
 });
