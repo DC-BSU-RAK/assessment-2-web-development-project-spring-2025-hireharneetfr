@@ -29,7 +29,10 @@ introVideo.addEventListener("ended", function() {
 
 document.addEventListener("keydown", function (e) {
   if (e.key.toLowerCase() === "x" && pressX.style.display === "block") {
-    window.location.href = "../mainmenu/menu.html";
+    let path = window.location.hostname.includes("github.io")
+  ? "/assessment-2-web-development-project-spring-2025-hireharneetfr/mainmenu/menu.html"
+  : "../mainmenu/menu.html";
+    window.location.href = path;
   }
 });
 
