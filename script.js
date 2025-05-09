@@ -29,7 +29,7 @@ introVideo.addEventListener("ended", function() {
 
 document.addEventListener("keydown", function (e) {
   if (e.key.toLowerCase() === "x" && pressX.style.display === "block") {
-    window.location.href = "menu.html";
+    window.location.href = "../mainmenu/menu.html";
   }
 });
 
