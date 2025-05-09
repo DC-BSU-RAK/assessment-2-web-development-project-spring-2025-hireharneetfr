@@ -6,7 +6,6 @@ introVideo.onended = () => {
   introVideo.style.display = "none";
   loopVideo.style.display = "block";
 
-  // Unmute right before playing
   loopVideo.muted = false;
   loopVideo.play();
 
@@ -31,7 +30,7 @@ document.addEventListener("keydown", function (e) {
   if (e.key.toLowerCase() === "x" && pressX.style.display === "block") {
     let path = window.location.hostname.includes("github.io")
   ? "/assessment-2-web-development-project-spring-2025-hireharneetfr/MainMenu/menu.html"
-  : "../mainmenu/menu.html";
+  : "../MainMenu/menu.html";
     window.location.href = path;
   }
 });
