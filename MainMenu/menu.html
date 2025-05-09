@@ -36,10 +36,10 @@
       <div class="soundtrack-menu">
         <span class="label">Game Soundtracks: </span>
         <ul class="track-list">
-          <li><button data-src="etc/soundtracks/track1.mp3">Track 1</button></li>
-          <li><button data-src="etc/soundtracks/track2.mp3">Track 2</button></li>
-          <li><button data-src="etc/soundtracks/track3.mp3">Track 3</button></li>
-          <li><button data-src="etc/soundtracks/track4.mp3">Track 4</button></li>
+          <li><button data-src="track1.mp3">Track 1</button></li>
+          <li><button data-src="track2.mp3">Track 2</button></li>
+          <li><button data-src="track3.mp3">Track 3</button></li>
+          <li><button data-src="track4.mp3">Track 4</button></li>
         </ul>
       </div>
 
@@ -53,10 +53,14 @@
     const trackButtons = document.querySelectorAll(".track-list button");
     const message = document.getElementById("audio-message");
 
+    const basePath = window.location.hostname.includes("github.io")
+      ? "/assessment-2-web-development-project-spring-2025-hireharneetfr/MainMenu/etc/soundtracks/"
+      : "etc/soundtracks/";
+
     trackButtons.forEach(button => {
       button.addEventListener("click", () => {
-        const newSrc = button.getAttribute("data-src");
-        music.src = newSrc;
+        const fileName = button.getAttribute("data-src");
+        music.src = basePath + fileName;
         music.play();
       });
     });
@@ -67,4 +71,5 @@
   </script>
 </body>
 </html>
+
 
