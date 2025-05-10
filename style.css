@@ -3,9 +3,10 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Using the custom gamer font */
   }
-  
+
+  /* This makes the video stretch full-screen and sit behind everything */
   .video-bg {
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@ body, html {
     z-index: -1;
   }
 
+/* This is the for instruction message at the bottom for audio interaction */
   #audio-instruction {
     position: absolute;
     bottom: 20px;
@@ -29,15 +31,17 @@ body, html {
     display: block;
 }
 
+/* This hides the audio message once the intro video ends */
 #intro-video.ended ~ #audio-instruction {
   display: none;
 }
 
+/* Keyframe animation for the fade in effect used for above */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
+/* Styling the "Press X to Start" message */
   #press-x {
     position: absolute;
     bottom: 30px;
@@ -48,10 +52,12 @@ body, html {
     letter-spacing: 2px;
   }
   
+/* Making the 'X' button orange to match the one in game */
   .x-key {
     color: orange;
   }
   
+/* This is the blink animation used on the "Press X" text to give the same feeling as the game */
   @keyframes blink {
     50% { opacity: 0; }
   }

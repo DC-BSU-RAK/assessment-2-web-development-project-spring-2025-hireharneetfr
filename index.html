@@ -4,31 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SA2: CALL OF DUTY: BO3</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/assessment-2-web-development-project-spring-2025-hireharneetfr/MainMenu/etc/logo.png" />
-  <link rel="icon" href="MainMenu/etc/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"> <!-- A custom font i got online -->
+  <link rel="stylesheet" href="style.css" /> <!-- This is to link the html page to the css for styling -->
+  <link rel="icon" href="/assessment-2-web-development-project-spring-2025-hireharneetfr/MainMenu/etc/logo.png" /> 
+  <link rel="icon" href="MainMenu/etc/logo.png" /> <!-- This is the logo that you can see on the tab of the webpage -->
 </head>
 <body>
-
+<!-- The Below is for the intro video shows on the startup of the webpage -->
   <video id="intro-video" class="video-bg" autoplay muted>
-    <source src="MainMenu/etc/activision.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="MainMenu/etc/activision.mp4" type="video/mp4"> <!-- Source is given for the vs to know where the file is -->
+    Your browser does not support the video tag. <!-- This is what you will see if the video doesnt work -->
   </video>
-
+<!-- The below is for the video that plays after the video above -->
   <video id="loop-video" class="video-bg" muted loop style="display: none;">
-    <source src="MainMenu/etc/starting.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <source src="MainMenu/etc/starting.mp4" type="video/mp4">   <!-- Source is given for the vs to know where the file is -->
+    Your browser does not support the video tag. <!-- This is what you will see if the video doesnt work -->
   </video>
 
-  <div id="press-x" style="display: none;">
+  <div id="press-x" style="display: none;"> <!-- This shows the "Press X to Start" message after the intro -->
     <p>Press <span class="x-key">X</span> to Start</p>
   </div>
-
-  <div id="audio-instruction">
+<!-- The below shows up to tell users to click somewhere so audio can work because of the browser startup policy -->
+  <div id="audio-instruction"> 
     <p>Please interact with the page for audio due to browser autoplay policy</p>
   </div>
-
+<!-- The below links the JavaScript to the HTML so the interactions and video switching actually work -->
   <script src="script.js"></script>
 
 </body>

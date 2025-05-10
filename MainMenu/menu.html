@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Black Ops III - SA2</title>
-  <link rel="stylesheet" href="menu.css" />
-  <link rel="icon" type="image/png" href="etc/logo.png" />
+  <link rel="stylesheet" href="menu.css" /> <!-- This is to link the html page to the css for styling -->
+  <link rel="icon" type="image/png" href="etc/logo.png" />  <!-- This is the logo that you can see on the tab of the webpage -->
 </head>
 <body>
+    <!-- background video playing on loop -->
   <video id="bg-video" autoplay loop muted>
     <source src="etc/starting.mp4" type="video/mp4">
   </video>
-  
+
+  <!-- the overlay holds everything that's on top of the vid -->
   <div class="overlay">
     <div class="sidebar">
-      <div class="featured">
+      <div class="featured">  <!-- Featured section just to give it that real game menu feel -->
         <p class="featured-label">FEATURED</p>
         <img src="https://m.media-amazon.com/images/M/MV5BODc4YTMyOTEtNzA2Ny00NmFjLTg4NDUtOGQxOTBiNDJjZDk4XkEyXkFqcGc@._V1_QL75_UX595.5_.jpg" alt="Featured Welcome to Black Ops III">
         <p class="featured-caption">Welcome to Black Ops III</p>
       </div>
       
+      <!-- game title on the bottom  -->
       <h1 class="logo">BLACK OPS <span class="three">III</span></h1>
-      <ul class="menu">
+      <ul class="menu"> <!-- menu list like how you'd see in the actual game, all below taking you to where you need to go next -->
         <li><a href="../Menu/about.html">ABOUT</a></li>
         <li><a href="../menu5/storyline.html">STORYLINE</a></li>
         <li><a href="../Menu2/characters.html">CHARACTERS</a></li>
@@ -29,11 +32,13 @@
         <li><a href="../Menu4/review.html">REVIEW & RATING</a></li>
       </ul>
 
+       <!-- Below is to just give the webpage more of the game feel-->
       <div class="status">
-        <p>You are Party Leader</p>
-        <p>Party Privacy: Closed</p>
+        <p>You are Party Leader |  Party Privacy: Closed</p>
+        <p>© 2025 Harneet • All rights reserved.</p>
       </div>
 
+      <!-- soundtrack selector  -->
       <div class="soundtrack-menu">
         <span class="label">Game Soundtracks: </span>
         <ul class="track-list">
@@ -44,28 +49,32 @@
         </ul>
       </div>
 
+      <!-- where the music actually plays from -->
       <audio id="bg-music" loop></audio>
+      <!-- browser blocks autoplay so this message shows unless user clicks -->
       <div id="audio-message" class="audio-message">No audio due to browser autoplay policy</div>
     </div>
   </div>
 
+   <!-- scripting the music functionality -->
   <script>
     const music = document.getElementById("bg-music");
     const trackButtons = document.querySelectorAll(".track-list button");
     const message = document.getElementById("audio-message");
 
+     // figuring out the correct path depending on if it's running online or local
     const basePath = window.location.hostname.includes("github.io")
       ? "/assessment-2-web-development-project-spring-2025-hireharneetfr/MainMenu/etc/soundtracks/"
-      : "etc/soundtracks/";
-
-    trackButtons.forEach(button => {
+      : "etc/soundtracks/"; 
+    // when user clicks a track, it loads that mp3 and plays it
+    trackButtons.forEach(button => { 
       button.addEventListener("click", () => {
         const fileName = button.getAttribute("data-src");
         music.src = basePath + fileName;
         music.play();
       });
     });
-
+    // hides that autoplay warning once music plays
     music.addEventListener("play", () => {
       message.style.display = "none";
     });

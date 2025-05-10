@@ -6,9 +6,10 @@ body, html {
     color: white;
 
     overflow: hidden;
-  }
-  
-  .video-bg {
+}
+
+/* the box in the middle with all the text */
+.video-bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,52 +19,69 @@ body, html {
     z-index: -1;
   }
   
-  .here-button {
-    color: orange;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-  }
+/* makes the here button have a orange color */
+.here-button {
+  color: orange;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+}
   
-  .here-button:hover {
-    text-decoration: underline;
-  }
+.here-button:hover {
+  text-decoration: underline;
+}
   
-  .overlay-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    max-width: 700px;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6); 
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 20px lightblue;
-  }
+.overlay-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  max-width: 700px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px lightblue;
+}
   
-  .overlay-box h1 {
-    font-size: 2.5rem;
-    color: orange;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-  }
+.overlay-box h1 {
+  font-size: 2.5rem;
+  color: orange;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
   
-  .info-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
+/* the info text explaining the game */
+.info-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* lil text for pressing X to go back */
+.go-back {
+  margin-top: 30px;
+  color: #ccc;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* makes the X orange */
+.x-key {
+  color: orange;
+}
   
-  .go-back {
-    margin-top: 30px;
-    color: #ccc;
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-  
-  .x-key {
-    color: orange;
-  }
-  
+/* to make sure the copyright is at the bottom */
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+
+
   
