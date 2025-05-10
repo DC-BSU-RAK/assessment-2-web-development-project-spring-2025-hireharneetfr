@@ -143,10 +143,9 @@ body, html {
 .copyright {
   position: fixed;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 10px;
   font-size: 12px;
   color: white;
-  text-align: center;
+  text-align: left;
   z-index: 999;
-} 
+}

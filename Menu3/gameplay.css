@@ -59,5 +59,18 @@ video {
   color: orange;
 }
 
+/* to make sure the copyright is at the bottom */
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+  text-align: left;
+  z-index: 999;
+}
+
+
+
   
   
