@@ -1,4 +1,4 @@
-const reviews = [
+const reviews = [ // all the reviews for the game
   `"The graphics are stunning, the sound effects are perfectly executed, and the overall experience is just phenomenal. I encountered only one minor bug on Shadows of Evil, but it didn’t affect the gameplay at all – it’s still 100% playable.
 The campaign mission pulls you in right from the start, not just with its story or graphics but because it's just so addictive. Whether playing solo or with friends, the game is incredibly fun and keeps you hooked. Even though it’s an older title, it’s still a nostalgic gem, and revisiting it years later has been a blast.
 While I’m not the biggest fan of multiplayer personally, the Zombies mode is my absolute favorite! The maps are brilliantly designed, each offering something unique. Shadows of Evil’s magma theme, for example, and other maps that provide entirely fresh experiences ensure that the game never feels repetitive or boring."`,
@@ -13,6 +13,7 @@ Can only recommend buying it when it's on sale"`
 
 ];
 
+// If user presses "X", take them back to the menu page
 document.addEventListener("keydown", function (e) {
         if (e.key.toLowerCase() === "x") {
           window.location.href = "../MainMenu/menu.html";
@@ -20,8 +21,8 @@ document.addEventListener("keydown", function (e) {
       });
 
 function showReview(index) {
-  document.getElementById('reviewText').textContent = reviews[index];
-  document.querySelectorAll('.review-buttons button').forEach((btn, i) => {
-    btn.classList.toggle('active', i === index);
+  document.getElementById('reviewText').textContent = reviews[index]; // Set the review text based on the index
+  document.querySelectorAll('.review-buttons button').forEach((btn, i) => {  // Loop through all the review buttons and add/remove the 'active' class
+    btn.classList.toggle('active', i === index); // Highlight the active button
   });
 }

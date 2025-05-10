@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Characters</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"> <!-- A custom font i got online -->
   <link rel="stylesheet" href="characters.css" /> <!-- This is to link the html page to the css for styling -->
   <link rel="icon" type="image/png" href="../MainMenu/etc/logo.png" /> <!-- This is the logo that you can see on the tab of the webpage -->
 </head>
@@ -13,9 +13,9 @@
     <h1 class="cod-title">Characters in Call of Duty: Black Ops III</h1>
 
     <div class="content">
-      <!-- Character Grid -->
+      <!-- Grid that holds all character boxes -->
       <div class="character-grid">
-        <!-- Example boxes, replace image src as needed -->
+         <!-- Each .char-box has a name, info about the character and it shows an image -->
         <div class="char-box" data-name="Ruin" data-info="Born into a military family and raised in a tough neighborhood, Donnie Walsh grew up fearless and headstrong.
         Joining the army straight out of high school, Walsh is an infantry soldier through and through; the battlefield has become his second home.
         He is suspicious of covert ops and anything that operates outside of the established chain of command, viewing them as dishonorable. He prefers a straight-up fair fight, and knows that there's never a substitute for good boots on the ground.
@@ -83,25 +83,30 @@
         </div>
       </div>
 
+      <!-- Info panel that updates with character details on hover or click -->
       <div class="info-panel" id="infoPanel">
         <h2 id="charName">Select a Character</h2>
         <p id="charInfo">Hover or click a Character to get information.</p>
       </div>
     </div>
   </div>
+    <!-- tells user how to return -->
   <p id="abc" font-family="san" class="return-text">Press <span class="x-key">X</span> to return to menu</p>
     
   <script>
+    // Grab all character boxes + info panel elements
     const charBoxes = document.querySelectorAll('.char-box');
     const charName = document.getElementById('charName');
     const charInfo = document.getElementById('charInfo');
 
+    // If user presses "X", take them back to the menu page
     document.addEventListener("keydown", function (e) {
       if (e.key.toLowerCase() === "x") {
         window.location.href = "../MainMenu/menu.html";
       }
     });
 
+    // When user hovers or clicks on a character, update info panel
     charBoxes.forEach(box => {
       box.addEventListener('mouseenter', () => {
         charName.textContent = box.dataset.name;

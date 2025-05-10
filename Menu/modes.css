@@ -7,6 +7,7 @@ body, html {
     overflow: hidden;
 }
 
+/* Fullscreen background video setup */
 .video-bg {
     position: fixed;
     top: 0;
@@ -17,6 +18,7 @@ body, html {
     z-index: -1;
 }
 
+/* Main content layout with spacing */
 .overlay {
     display: flex;
     flex-direction: column;
@@ -26,14 +28,18 @@ body, html {
     text-align: center;
 }
 
+/* Big orange title text */
 .page-heading {
     font-size: 32px;
     color: orange;
     margin-top: 20px;
 }
 
+/*  A custom font i got online */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+
+/* Grid layout for flip cards */
 .card-grid {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +50,7 @@ body, html {
     gap: 30px; 
 }
 
+/* The outer shell of each flip card */
 .flip-card {
     background-color: transparent;
     width: 280px;
@@ -54,11 +61,13 @@ body, html {
     z-index: 1;
 }
 
+/* Card hover zoom effect */
 .flip-card:hover {
     transform: scale(1.05); 
     z-index: 10; 
 }
 
+/* Wrapper for front and back of card */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -67,10 +76,12 @@ body, html {
     transition: transform 0.8s ease;
 }
     
+/* Rotate card when hovered */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
+/* Front & back card base styles */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -93,34 +104,49 @@ body, html {
     background-color: rgba(20, 20, 20, 0.55); 
 }
 
-    .flip-card-front {
-        background-size: cover;
-        background-position: center;
-    }
+/* Style for card front */
+.flip-card-front {
+    background-size: cover;
+    background-position: center;
+}
 
-    .flip-card-back {
-        transform: rotateY(180deg);
-    }
+/* Rotate back face */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
 
-    .flip-card-back p {
-        margin: 0;
-        font-size: 14px; 
-        line-height: 1.5;
-        padding: 10px;
-    }
+/* Text inside the back of the card */
+.flip-card-back p {
+    margin: 0;
+    font-size: 14px; 
+    line-height: 1.5;
+    padding: 10px;
+}
 
-    .x-key {
-        color: orange;
-    }
+/* Makes the 'X' key icon orange */
+.x-key {
+    color: orange;
+}
 
-    /* to make sure the copyright is at the bottom */
-    .copyright {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    z-index: 999;
-    }
+/* Text that tells user how to return */
+.return-text {
+  position: absolute;
+  bottom: 40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+
+/* to make sure the copyright is at the bottom */
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  z-index: 999;
+} 

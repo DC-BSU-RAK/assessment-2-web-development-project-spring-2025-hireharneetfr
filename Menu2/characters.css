@@ -1,81 +1,97 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url('CharactersImages/bg.webp') no-repeat center center fixed;
-    background-size: 130%;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    color: white;
-  }
-  
-  .main-container {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .cod-title {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: orange;
-    text-shadow: 0 0 10px lightsalmon;
-    margin-bottom: 30px;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .character-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-auto-rows: 100px;
-    gap: 15px;
-  }
-  
-  .char-box {
-    border: 2px solid orange;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px orange;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .char-box:hover {
-    transform: scale(1.05);
-  }
-  
-  .char-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .info-panel {
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 3px solid orange;
-    text-align: left;
-  }
-  
-  .info-panel h2 {
-    color: orange;
-    margin-top: 0;
-  }
-  
-  .info-panel p {
-    line-height: 1.5;
-  }
-#abc {
-    text-align:center;
+  margin: 0;
+  padding: 0;
+  background: url('CharactersImages/bg.webp') no-repeat center center fixed;
+  background-size: 130%;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  color: white;
 }
-  .x-key {
-    color: orange;
+
+/* Main container that shows everything neatly */
+.main-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Title styling  */
+.cod-title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: orange;
+  text-shadow: 0 0 10px lightsalmon;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Grid layout to make all same sizes and have 3 coloums*/
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 15px;
+}
+
+/* Each character box styling */
+.char-box {
+  border: 2px solid orange;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px orange;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Smooth zoom-in on hover */
+.char-box:hover {
+  transform: scale(1.05);
+}
+
+/* Character image to fill the box */
+.char-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info panel styling */
+.info-panel {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05); /* subtle transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 3px solid orange;
+  text-align: left;
+}
+
+/* Name of selected character */
+.info-panel h2 {
+  color: orange;
+  margin-top: 0;
+}
+
+/* Character bio paragraph */
+.info-panel p {
+  line-height: 1.5;
+}
+
+/* to back back to menu */
+#abc {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* FIX: was incorrectly in HTML */
+  margin-top: 30px;
+}
+
+/* Styling for the "X" key text */
+.x-key {
+  color: orange;
+  font-weight: bold;
 }

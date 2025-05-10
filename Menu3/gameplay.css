@@ -1,56 +1,63 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  body {
-    background: url('etc/bgg.webp') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-  }
-  
-  h1 {
-    color: orange;
-    font-size: 2.8em;
-    text-shadow: 2px 2px 6px black;
-    margin-bottom: 20px;
-  }
-  
-  .video-container {
-    border: 4px solid orange;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 80%;
-    max-width: 960px;
-  }
-  
-  video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set height to 100% so it doesnt make thw webpage scrollable */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Main body styling with background image and center alignment */
+body {
+  background: url('etc/bgg.webp') no-repeat center center fixed; 
+  background-size: cover; 
+  font-family: 'Orbitron', sans-serif; 
+  color: white;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+}
+
+/* Styling for main heading */
+h1 {
+  color: orange; 
+  font-size: 2.8em;
+  text-shadow: 2px 2px 6px black; 
+  margin-bottom: 20px;
+}
+
+/* Container around the video player */
+.video-container {
+  border: 4px solid orange; 
+  padding: 10px;
+  border-radius: 12px; 
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.6); 
+  width: 80%;
+  max-width: 960px; 
+}
+
+/* Video styling to make it rounded */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Making the key colors to be orange like in the game */
 .o-key {
-    color: orange;
+  color: orange;
 }
 
 .x-key {
-    color: orange;
+  color: orange;
 }
-  
+
   
   

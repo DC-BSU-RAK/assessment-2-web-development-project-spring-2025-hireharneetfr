@@ -5,32 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Walkthrough</title>
   <link rel="stylesheet" href="gameplay.css" /> <!-- This is to link the html page to the css for styling -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> <!-- A custom font i got online -->
   <link rel="icon" type="image/png" href="../MainMenu/etc/logo.png" /> <!-- This is the logo that you can see on the tab of the webpage -->
 </head>
 <body>
-
+  <!-- Main title of the page -->
   <h1>Game Walkthrough of Call of Duty: Black Ops III</h1>
 
+  <!-- Container for the video -->
   <div class="video-container">
-    <video controls>
+    <video controls> <!-- Allows users to play, pase or seek the video -->
       <source src="etc/walkthrough.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      Your browser does not support the video tag. <!-- This is what you will see if the video doesnt work -->
     </video>
   </div>
   <br>
-  <p class="return-text">Press <span class="o-key">O</span> to watch the whole video</p>
-  <p class="return-text">Press <span class="x-key">X</span> to return to menu</p>
+  <p class="return-text">Press <span class="o-key">O</span> to watch the whole video</p> <!--  for using the 'O' key to watch full video -->
+  <p class="return-text">Press <span class="x-key">X</span> to return to menu</p> <!--  for using the 'X' key to return to the main menu -->
     
 
 <script>
   document.addEventListener("keydown", function (e) {
-    const key = e.key.toLowerCase();
+    const key = e.key.toLowerCase(); // For it to work on both upper and lowercase
 
+    // When pressed O opens the full gameplay video in a new browser tab
     if (key === "o") {
       window.open("https://www.youtube.com/watch?v=7W4ApCp9AzY", "_blank");
     }
 
+    // When pressed X takes user to the menu
     if (key === "x") {
       window.location.href = "../MainMenu/menu.html";
     }

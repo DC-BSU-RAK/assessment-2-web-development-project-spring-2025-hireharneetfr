@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Review</title>
   <link rel="stylesheet" href="review.css" /> <!-- This is to link the html page to the css for styling -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"> <!-- A custom font i got online -->
   <link rel="icon" type="image/png" href="../MainMenu/etc/logo.png" /> <!-- This is the logo that you can see on the tab of the webpage -->
 
 </head>
 <body>
   <div class="overlay"></div>
-
+   <!-- Main title of the page with the game name -->
   <div class="game-title">Call of Duty®: Black Ops III Steam Reviews</div>
 
   <div class="container">
+    <!-- Left Panel: Displaying review text and buttons -->
     <div class="left-panel">
+      <!-- Review Box to have review text -->
       <div class="review-box" id="reviewText">
         "The graphics are stunning, the sound effects are perfectly executed, and the overall experience is just phenomenal. I encountered only one minor bug on Shadows of Evil, but it didn’t affect the gameplay at all – it’s still 100% playable.
 The campaign mission pulls you in right from the start, not just with its story or graphics but because it's just so addictive. Whether playing solo or with friends, the game is incredibly fun and keeps you hooked. Even though it’s an older title, it’s still a nostalgic gem, and revisiting it years later has been a blast.
 While I’m not the biggest fan of multiplayer personally, the Zombies mode is my absolute favorite! The maps are brilliantly designed, each offering something unique. Shadows of Evil’s magma theme, for example, and other maps that provide entirely fresh experiences ensure that the game never feels repetitive or boring."
       </div>
-      <div class="review-buttons">
+      <div class="review-buttons">  <!-- Buttons for navigating through different reviews -->
         <button class="active" onclick="showReview(0)">1</button>
         <button onclick="showReview(1)">2</button>
         <button onclick="showReview(2)">3</button>
@@ -29,8 +31,9 @@ While I’m not the biggest fan of multiplayer personally, the Zombies mode is m
       </div>
     </div>
 
+    <!-- Right Panel to have game details and additional information -->
     <div class="right-panel">
-      <img src="etc/codpic.png" alt="Game Art" class="box-art">
+      <img src="etc/codpic.png" alt="Game Art" class="box-art"> <!-- Game description with important details like rating, release date, and developer name  -->
       <p><strong>Call of Duty®:</strong> Black Ops III Zombies Chronicles Edition includes the full base game plus the Zombies Chronicles content expansion.</p>
       <p><Strong>9/10</Strong> rating on Steam and <strong>90%</strong> of google users liked this video game</p>
       <p><strong>Recent Reviews:</strong> Very Positive (1,194)</p>
@@ -47,6 +50,7 @@ While I’m not the biggest fan of multiplayer personally, the Zombies mode is m
       </div>
     </div>
   </div>
+   <!-- Key to return to the menu -->
       <p class="return-text">Press <span class="x-key">X</span> to return to menu</p>
 
   <!-- The below links the JavaScript to the HTML so the interactions and video switching actually work -->

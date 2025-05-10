@@ -9,6 +9,7 @@ body {
     align-items: center;
 }
 
+/* Content container styling */
 .content {
     background-color: rgba(0, 0, 0, 0.5); 
     color: white;
@@ -23,6 +24,7 @@ body {
     overflow: hidden; 
 }
 
+/* Heading styling */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -34,17 +36,20 @@ h1 {
     padding: 10px 0;
 }
 
+/* Storyline container that holds the content */
 .storyline-container {
     flex-grow: 1;
     overflow-y: scroll; 
     padding-right: 10px; 
 }
 
+/* Storyline content styling */
 .storyline {
     font-size: 1rem;
     line-height: 1.6;
 }
 
+/* Hides the scrollbar for a cleaner look */
 .storyline-container::-webkit-scrollbar {
     display: none;
 }
@@ -53,9 +58,11 @@ h1 {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
 }
+/* Styling for the return text at the bottom */
 .return-text {
   text-align: center;
 }
+/* to make the X key orange */
 .x-key {
   color: orange;
 }

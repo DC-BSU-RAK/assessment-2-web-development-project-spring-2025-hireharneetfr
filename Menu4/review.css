@@ -8,6 +8,7 @@ html, body {
   position: relative;
 }
 
+/* Dark overlay for background to be seen */
 .overlay {
   position: absolute;
   inset: 0;
@@ -15,6 +16,7 @@ html, body {
   z-index: 0;
 }
 
+/* Title for the game styled and on top  */
 .game-title {
   position: absolute;
   top: 80px;
@@ -25,6 +27,7 @@ html, body {
   z-index: 2;
 }
 
+/* Container for both panels (left and right) */
 .container {
   display: flex;
   justify-content: center;
@@ -36,6 +39,7 @@ html, body {
   z-index: 1;
 }
 
+/* Left and right panels styling */
 .left-panel, .right-panel {
   background: rgba(10, 25, 40, 0.95);
   padding: 20px;
@@ -48,6 +52,7 @@ html, body {
   justify-content: space-between;
 }
 
+/* Review box styling */
 .review-box {
   background-color: #1e3245;
   border-radius: 10px;
@@ -57,12 +62,14 @@ html, body {
   flex-grow: 1;
 }
 
+/* Styling for review buttons (1, 2, 3, etc.) */
 .review-buttons {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
 
+/* Individual button styling */
 .review-buttons button {
   flex: 1;
   padding: 10px;
@@ -74,25 +81,30 @@ html, body {
   transition: background-color 0.3s;
 }
 
+/* Styling for the active button */
 .review-buttons button.active {
   background-color: #3b6fa1;
 }
 
+/* Right panel box,  image styling */
 .right-panel img.box-art {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
+/* Right panel paragraph styling */
 .right-panel p {
   margin: 5px 0;
   line-height: 1;
 }
 
+/* Tags styling in the right panel */
 .tags {
   margin-top: 10px;
 }
 
+/* Individual tag styling */
 .tags span {
   background-color: #2c3e50;
   padding: 4px 8px;
@@ -101,6 +113,7 @@ html, body {
   font-size: 13px;
 }
 
+/* Styling for the return text at the bottom */
 .return-text {
   position: absolute;
   bottom: 20px;
@@ -111,6 +124,7 @@ html, body {
   z-index: 2;
 }
 
+/* Making the key color to be orange like in the game */
 .x-key {
   color: orange;
   font-family: 'Orbitron', sans-serif !important;
